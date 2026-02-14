@@ -1,0 +1,40 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T11:41:21.198Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-16",
+        "summary": "Ensure the Home section “Download Resume” CTA opens the intended resume PDF reliably in the browser. The resume file must be served as a static asset and the click behavior must open the PDF (e.g., in a new tab/window) rather than failing silently.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/Anuj_Chaudhary_Resume.pdf",
+          "frontend/src/components/sections/HomeSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/Anuj_Chaudhary_Resume.pdf",
+          "frontend/src/components/sections/HomeSection.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/Anuj_Chaudhary_Resume.pdf",
+    "frontend/src/components/sections/HomeSection.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

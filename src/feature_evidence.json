@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-ensure-the-home-section-download-resume-cta-opens-the-intended-resume-pdf-reliably-in-the-browser-the-resume-file-must-be-served-as-a-static-asset-and-the-click-behavior-must-open-the-pdf-e-g-in-a-new-tab-window-rather-than-failing-silently",
+      "featureTitle": "Ensure the Home section “Download Resume” CTA opens the intended resume PDF reliably in the browser. The resume file must be served as a static asset and the click behavior must open the PDF (e.g., in a new tab/window) rather than failing silently.",
+      "files": [
+        "frontend/src/components/sections/HomeSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

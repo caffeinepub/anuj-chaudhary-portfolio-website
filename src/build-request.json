@@ -1,0 +1,37 @@
+{
+  "kind": "build_request",
+  "title": "Fix Resume Download CTA to open the intended PDF file",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "text": "Ensure the Home section “Download Resume” CTA opens the intended resume PDF reliably in the browser. The resume file must be served as a static asset and the click behavior must open the PDF (e.g., in a new tab/window) rather than failing silently.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "yes in resume download this file should open"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A resume PDF exists as a static file in the frontend public assets and is accessible via an absolute path (e.g., /assets/Anuj_Chaudhary_Resume.pdf) in production builds.",
+        "Clicking “Download Resume” opens the PDF file in the browser (new tab/window acceptable) without console errors.",
+        "The behavior works after deployment on the Internet Computer (not only in local dev)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or anything in frontend/src/components/ui (compose instead).",
+    "Keep the solution fully static for the resume file (no backend changes and no fetching the PDF through Motoko)."
+  ],
+  "nonGoals": [
+    "Changing resume content text elsewhere on the site.",
+    "Adding authentication or gating access to the resume file."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

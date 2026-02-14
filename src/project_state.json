@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Build a modern, recruiter-friendly personal portfolio website for Anuj Chaudhary (Business Analytics/MBA) with clean minimal design, ordered sections (Home→About→Projects→Experience→Skills→Achievements→Education→Contact), responsive layout, subtle animations, smooth scrolling, and SEO/ATS optimization.",
+  "architectural_notes": [
+    "Single-page portfolio with ordered sections: Home → About → Projects → Experience → Skills → Achievements → Education → Contact",
+    "Design system: light background, dark text, navy/dark teal accent; modern sans-serif typography; subtle animations + smooth scrolling",
+    "Non-functional requirements: responsive (mobile-first), SEO optimized, fast loading, ATS keyword-friendly content"
+  ],
+  "known_issues": [
+    "Resume download CTA currently does not open the intended resume file; needs correct file/link behavior."
+  ],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-fully-responsive-personal-portfolio-site-with-smooth-scrolling-navigation-between-sections-in-this-exact-order-home-about-projects-experience-skills-achievements-education-contact-footer",
+      "title": "Create a single-page, fully responsive personal portfolio site with smooth scrolling navigation between sections in this exact order: Home → About → Projects → Experience → Skills → Achievements → Education → Contact → Footer.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-requested-visual-design-system-clean-minimal-professional-layout-light-background-with-dark-text-accent-color-navy-blue-or-dark-teal-modern-sans-serif-typography-subtle-animations-and-a-recruiter-friendly-presentation",
+      "title": "Implement the requested visual design system: clean/minimal/professional layout, light background with dark text, accent color navy blue or dark teal, modern sans-serif typography, subtle animations, and a recruiter-friendly presentation.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-home-section-with-full-name-anuj-chaudhary-title-business-analytics-professional-aspiring-business-analyst-the-provided-intro-paragraph-verbatim-and-3-cta-buttons-view-projects-scrolls-to-projects-download-resume-downloads-a-local-pdf-asset-contact-me-scrolls-to-contact",
+      "title": "Build the Home section with: full name (Anuj Chaudhary), title (“Business Analytics Professional | Aspiring Business Analyst”), the provided intro paragraph verbatim, and 3 CTA buttons: View Projects (scrolls to Projects), Download Resume (downloads a local PDF asset), Contact Me (scrolls to Contact).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-about-me-section-including-a-short-professional-bio-professional-tone-the-stated-career-goal-strengths-list-and-tools-list-exactly-covering-sql-power-bi-excel-python-prompt-engineering-ai-tools",
+      "title": "Build the About Me section including: a short professional bio (professional tone), the stated career goal, strengths list, and tools list exactly covering: SQL, Power BI, Excel, Python, Prompt Engineering, AI tools.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-projects-section-with-three-project-cards-each-card-must-show-project-name-description-tools-used-and-outcome-using-the-user-provided-content",
+      "title": "Build the Projects section with three project cards. Each card must show: project name, description, tools used, and outcome, using the user-provided content.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-experience-section-with-the-role-management-trainee-intern-sai-enterprises-feb-2024-may-2024-and-include-all-provided-bullet-points-metrics",
+      "title": "Build the Experience section with the role: “Management Trainee Intern — Sai Enterprises (Feb 2024 – May 2024)” and include all provided bullet points/metrics.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-skills-section-and-display-the-provided-skills-as-skill-bars-or-icons-sql-power-bi-excel-python-prompt-engineering-data-analysis-visualization-critical-thinking-problem-solving",
+      "title": "Build the Skills section and display the provided skills as skill bars or icons: SQL, Power BI, Excel, Python, Prompt Engineering, Data Analysis, Visualization, Critical Thinking, Problem Solving.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-achievements-section-and-include-all-provided-achievements-as-bullet-points-with-a-professional-recruiter-friendly-presentation",
+      "title": "Build the Achievements section and include all provided achievements as bullet points with a professional, recruiter-friendly presentation.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-education-section-containing-mba-business-analytics-sharda-university-2024-2026-and-bba-human-resources-sharda-university-2021-2024",
+      "title": "Build the Education section containing: “MBA – Business Analytics | Sharda University | 2024–2026” and “BBA – Human Resources | Sharda University | 2021–2024”.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-contact-section-with-visible-email-and-phone-fields-a-linkedin-button-and-a-contact-form-that-collects-at-least-name-email-message-the-form-must-show-success-and-error-states",
+      "title": "Build the Contact section with visible email and phone fields, a LinkedIn button, and a contact form that collects at least: name, email, message. The form must show success and error states.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-simple-professional-footer-displaying-exactly-2026-anuj-chaudhary-business-analytics-portfolio",
+      "title": "Add a simple, professional footer displaying exactly: “© 2026 Anuj Chaudhary | Business Analytics Portfolio”.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-seo-performance-set-appropriate-page-title-and-meta-description-for-anuj-chaudhary-s-business-analytics-portfolio-ensure-semantic-headings-per-section-ensure-fast-loading-by-keeping-assets-local-and-lightweight",
+      "title": "SEO + performance: set appropriate page title and meta description for Anuj Chaudhary’s Business Analytics portfolio; ensure semantic headings per section; ensure fast loading by keeping assets local and lightweight.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-all-on-page-text-maintains-a-professional-tone-and-is-ats-keyword-optimized-around-business-analyst-business-analytics-keywords-while-preserving-the-user-provided-statements-verbatim-where-provided",
+      "title": "Ensure all on-page text maintains a professional tone and is ATS keyword optimized around Business Analyst/Business Analytics keywords, while preserving the user-provided statements verbatim where provided.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-section-contact-information-to-use-the-user-provided-email-phone-number-and-linkedin-profile-url-specifically-in-the-contact-information-cards-update-both-the-link-targets-and-the-visible-text-to-match-email-ac8739667-gmail-com-phone-9560477600-use-tel-919560477600-linkedin-https-www-linkedin-com-in-anuj-chaudhary-23786024b",
+      "title": "Update the Contact section contact information to use the user-provided email, phone number, and LinkedIn profile URL. Specifically, in the Contact Information cards, update both the link targets and the visible text to match: email = ac8739667@gmail.com, phone = 9560477600 (use tel:+919560477600), LinkedIn = https://www.linkedin.com/in/anuj-chaudhary-23786024b.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-home-section-download-resume-cta-opens-the-intended-resume-pdf-reliably-in-the-browser-the-resume-file-must-be-served-as-a-static-asset-and-the-click-behavior-must-open-the-pdf-e-g-in-a-new-tab-window-rather-than-failing-silently",
+      "title": "Ensure the Home section “Download Resume” CTA opens the intended resume PDF reliably in the browser. The resume file must be served as a static asset and the click behavior must open the PDF (e.g., in a new tab/window) rather than failing silently.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create overall site layout/theme: clean minimal professional design (light background, dark text, navy/dark teal accents), modern sans-serif fonts, smooth scrolling, subtle animations, fully responsive",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement Home section with name, title, intro blurb, and CTA buttons (View Projects, Download Resume, Contact Me)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Implement About Me section with bio, career goal, strengths, and tools list (SQL, Power BI, Excel, Python, Prompt Engineering, AI tools)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Implement Projects section with cards for SQL Sales Analysis, Customer Churn Dashboard, and Predictive Analytics Research including description, tools used, and outcomes",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Implement Experience section for Management Trainee Intern at Sai Enterprises (Feb 2024–May 2024) with listed achievements/metrics",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Implement Skills section displayed as skill bars or icons (SQL, Power BI, Excel, Python, Prompt Engineering, Data Analysis, Visualization, Critical Thinking, Problem Solving)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Implement Achievements section with provided bullet points (accuracy, reduced revisions, churn dashboard, SQL ranking, Microsoft Skill India certification)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Implement Education section (MBA Business Analytics 2024–2026; BBA HR 2021–2024 at Sharda University)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Implement Contact section with email, phone, LinkedIn button, and contact form",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Add footer with © 2026 Anuj Chaudhary | Business Analytics Portfolio",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Add SEO optimization, fast-loading performance considerations, professional tone, and ATS keyword optimization across content",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Implement backend persistence for contact form submissions in the single Motoko actor: store submissions with timestamp and fields (name, email, message). Expose an update method to create a submission. (No admin UI required.)",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-23",
+      "summary": "Update the Home section “Download Resume” CTA so it opens/downloads the intended resume file correctly (resume link points to the correct local PDF and opens when clicked).",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Anuj Chaudhary Portfolio Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

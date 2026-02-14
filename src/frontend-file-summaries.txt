@@ -1,0 +1,21 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates the single-page portfolio layout with all sections in order (Home → About → Projects → Experience → Skills → Achievements → Education → Contact → Footer) and integrates React Query and Internet Identity providers.",
+  "frontend/src/components/TopNav.tsx": "Sticky navigation bar with smooth scrolling to sections, active section highlighting, and responsive mobile menu with hamburger toggle.",
+  "frontend/src/components/Section.tsx": "Reusable section wrapper component that provides consistent spacing, max-width container, and anchor IDs for smooth scrolling navigation.",
+  "frontend/src/components/Reveal.tsx": "Animation wrapper component that uses IntersectionObserver to trigger subtle fade-in and slide-up animations when content enters the viewport.",
+  "frontend/src/hooks/useRevealOnScroll.ts": "Custom React hook implementing IntersectionObserver for scroll-based reveal animations with configurable threshold and root margin.",
+  "frontend/src/components/sections/HomeSection.tsx": "Hero section displaying Anuj's name, title, professional intro, and three CTA buttons (View Projects, Download Resume as a link opening in new tab, Contact Me) with smooth scroll functionality.",
+  "frontend/src/components/sections/AboutSection.tsx": "About section featuring professional bio, career goal statement, core strengths badges, and technical tools list with card-based layout.",
+  "frontend/src/components/sections/ProjectsSection.tsx": "Projects showcase with three responsive cards displaying SQL Sales Analysis, Customer Churn Dashboard, and Predictive Analytics Research projects with descriptions, tools, and outcomes.",
+  "frontend/src/components/sections/ExperienceSection.tsx": "Experience section highlighting Management Trainee Intern role at Sai Enterprises with all five achievement bullet points in a professional card layout.",
+  "frontend/src/components/sections/SkillsSection.tsx": "Skills display featuring nine technical and soft skills with icons and animated progress bars showing proficiency levels.",
+  "frontend/src/components/sections/AchievementsSection.tsx": "Achievements section presenting five key accomplishments in a grid layout with icons (using BadgeCheck instead of Certificate for certification) and descriptive text.",
+  "frontend/src/components/sections/EducationSection.tsx": "Education section displaying MBA and BBA degrees from Sharda University with dates and current status indicator.",
+  "frontend/src/components/sections/ContactSection.tsx": "Contact section with updated email (ac8739667@gmail.com), phone (9560477600), and LinkedIn (https://www.linkedin.com/in/anuj-chaudhary-23786024b) information cards, plus a validated contact form that submits to the backend with success/error toast notifications.",
+  "frontend/src/components/Footer.tsx": "Professional footer displaying copyright notice and Caffeine.ai attribution with UTM tracking parameters.",
+  "frontend/src/hooks/useQueries.ts": "React Query mutation hook for submitting contact form data to the backend actor with proper error handling and cache invalidation.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining professional navy/teal palette for light theme, smooth scroll behavior, and custom design tokens.",
+  "frontend/tailwind.config.js": "Tailwind configuration with Inter font family, extended color palette using CSS variables, custom border radius, and animation utilities.",
+  "frontend/index.html": "HTML entry point with SEO-optimized title and meta description for Anuj Chaudhary's Business Analytics portfolio, including Inter font from Google Fonts.",
+  "frontend/public/assets/Anuj_Chaudhary_Resume.pdf": "Anuj Chaudhary's resume PDF file served as a static asset accessible at /assets/Anuj_Chaudhary_Resume.pdf."
+}

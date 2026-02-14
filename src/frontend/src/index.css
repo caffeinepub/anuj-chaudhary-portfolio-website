@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        
+        /* Light theme - Professional navy/teal palette */
+        --background: 0.99 0 0;
+        --foreground: 0.15 0.02 240;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.02 240;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.02 240;
+        
+        /* Navy blue primary */
+        --primary: 0.35 0.12 240;
+        --primary-foreground: 0.99 0 0;
+        
+        /* Light gray secondary */
+        --secondary: 0.96 0.005 240;
+        --secondary-foreground: 0.15 0.02 240;
+        
+        --muted: 0.96 0.005 240;
+        --muted-foreground: 0.45 0.02 240;
+        
+        /* Teal accent */
+        --accent: 0.55 0.10 200;
+        --accent-foreground: 0.99 0 0;
+        
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.99 0 0;
+        
+        --border: 0.90 0.005 240;
+        --input: 0.90 0.005 240;
+        --ring: 0.35 0.12 240;
+        
+        --chart-1: 0.55 0.18 240;
+        --chart-2: 0.55 0.15 200;
+        --chart-3: 0.60 0.12 180;
+        --chart-4: 0.50 0.15 260;
+        --chart-5: 0.65 0.10 160;
+    }
+
+    .dark {
+        --background: 0.12 0.02 240;
+        --foreground: 0.95 0.01 240;
+        
+        --card: 0.15 0.02 240;
+        --card-foreground: 0.95 0.01 240;
+        
+        --popover: 0.15 0.02 240;
+        --popover-foreground: 0.95 0.01 240;
+        
+        --primary: 0.65 0.15 220;
+        --primary-foreground: 0.12 0.02 240;
+        
+        --secondary: 0.20 0.02 240;
+        --secondary-foreground: 0.95 0.01 240;
+        
+        --muted: 0.20 0.02 240;
+        --muted-foreground: 0.65 0.01 240;
+        
+        --accent: 0.55 0.12 200;
+        --accent-foreground: 0.95 0.01 240;
+        
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.95 0.01 240;
+        
+        --border: 0.25 0.02 240;
+        --input: 0.25 0.02 240;
+        --ring: 0.65 0.15 220;
+        
+        --chart-1: 0.60 0.18 240;
+        --chart-2: 0.60 0.15 200;
+        --chart-3: 0.65 0.12 180;
+        --chart-4: 0.55 0.15 260;
+        --chart-5: 0.70 0.10 160;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}

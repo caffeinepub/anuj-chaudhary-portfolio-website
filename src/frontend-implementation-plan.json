@@ -1,0 +1,28 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix Home resume download CTA to reliably open the intended PDF",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "summary": "Serve the resume PDF as a static public asset and ensure the Home “Download Resume” CTA opens it reliably in a new tab/window on deployed builds.",
+      "acceptanceCriteria": [
+        "A resume PDF exists as a static file in the frontend public assets and is accessible via an absolute path (e.g., /assets/Anuj_Chaudhary_Resume.pdf) in production builds.",
+        "Clicking “Download Resume” opens the PDF file in the browser (new tab/window acceptable) without console errors.",
+        "The behavior works after deployment on the Internet Computer (not only in local dev)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/Anuj_Chaudhary_Resume.pdf",
+          "operation": "create",
+          "description": "Add the intended resume PDF as a static public asset so it is served directly at the absolute path /assets/Anuj_Chaudhary_Resume.pdf in production builds."
+        },
+        {
+          "path": "frontend/src/components/sections/HomeSection.tsx",
+          "operation": "modify",
+          "description": "Replace the current programmatic download-anchor logic with a normal link-style CTA that navigates to /assets/Anuj_Chaudhary_Resume.pdf and opens it in a new tab/window (e.g., anchor with target=\"_blank\" and appropriate rel), ensuring the click does not fail silently after IC deployment and produces no console errors."
+        }
+      ]
+    }
+  ]
+}
